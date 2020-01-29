@@ -59,7 +59,12 @@ body {
 }
 
 a {
-  color: #ffa200;
+  color: #0D0046;
+  /*font-style: */
+  font-family: "FoodiRegular";  
+  font-size: 1.1em;
+  text-decoration: none;
+
 }
 
 
@@ -103,7 +108,7 @@ h3 {
 
 .circle {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 45%;
   background: #fff;
 
   opacity: 0;
@@ -130,6 +135,7 @@ h3 {
 	color: #444;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.8em;
+	/*overflow-y: scroll;*/
 }
 
 .landing-pic{
@@ -162,12 +168,6 @@ figure {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   z-index: 2;
-}
-
-#canvas{
-  display:inline;
-  margins:auto;
-  background-color:black;  
 }
 
 figure.expanded {
@@ -222,3 +222,29 @@ figure img {
   margin-right: 2em;
 }
 
+/*#content {
+  position: relative;
+  margin-left: 100px;
+  height: 500px;
+  width: 350px;
+  overflow-y: scroll;
+}*/
+#sidebar {
+  position: fixed;
+  left: 30px;
+  top: 45vh;
+  text-align: right;
+  transform-origin: center;
+}
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar li > a {
+  margin: 0;
+  padding: 0;
+}
+#sidebar li.active a {
+  color: red;
+}

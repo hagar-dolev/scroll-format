@@ -21,6 +21,9 @@ var maxOpacity = 0.8;
 var minDuration = 2;
 var maxDuration = 20;
 
+// $('#content').scrollspy('refresh');
+// $('#content').scrollspy({target: '#sidebar' , offset: 50 });
+
 for (var i = 0; i < numCircles; i++) {
   var circle = $("<div class='circle'/>").appendTo(container);
   animateCircle(circle, true);
